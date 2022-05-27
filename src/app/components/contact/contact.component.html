@@ -11,20 +11,25 @@
                 <input type="text" style="text-transform:uppercase;" id="name" name="name" placeholder=" Nombres" required [(ngModel)]="name">
             </div>
             <div class="form-group ">
-                <input type="tel " placeholder="CELULAR " name="phonenumber" required [(ngModel)]="phonenumber ">
+                <input type="tel " translate="yes" placeholder="CELULAR " name="phonenumber" required [(ngModel)]="phonenumber ">
             </div>
             <div class="form-group ">
                 <input type="email " placeholder="E-MAIL " required name="emailCustomer" [(ngModel)]="emailCustomer">
             </div>
             <div class="form-group ">
-                <input type="email " placeholder="ASUNTO " required name="subject" [(ngModel)]="subject">
+                <input type="email" translate="yes" placeholder="ASUNTO " required name="subject" [(ngModel)]="subject">
             </div>
             <div class=" form-group ">
                 <!--<input class="mensaje" name="contentMessage" [(ngModel)]="contentMessage">-->
-                <textarea class="mensaje" cols="20" rows="3" name="contentMessage" maxlength="90" required [(ngModel)]="contentMessage"> </textarea>
+                <textarea class="mensaje" cols="20" rows="3" name="contentMessage" maxlength="90" required [(ngModel)]="contentMessage" placeholder="MENSAJE"> </textarea>
 
             </div>
-            <button id="btn-enviar " [disabled]="!f.valid "> <i class="bi bi-send"></i>Enviar</button>
+            <button id="btn-enviar " [disabled]="!f.valid "> Enviar <i class="bi bi-send-plus-fill"></i></button>
+            <div id="charge" hidden="hide">
+                <span id="spiner " class="spinner-border"> </span>
+                <p translate="yes">Enviando</p>
+            </div>
+
             <!--<button id="btn-enviar " mat-raised-button type="submit " id="btn " (click)="sendEmail() ">Enviar</button>-->
             <!--<button mat-raised-button [disabled]="true " type="submit " id="btn " (click)="sendEmail() ">Enviar</button>-->
         </div>

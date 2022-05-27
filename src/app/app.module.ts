@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { MenuComponent } from './components/menu/menu.component';
@@ -10,14 +9,14 @@ import { HomeComponent } from './components/home/home.component';
 import { HabilidadesComponent } from './components/habilidades/habilidades.component';
 import { ExperienciaComponent } from './components/experiencia/experiencia.component';
 import { HobiesComponent } from './components/hobies/hobies.component';
-
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {EmailService} from './components/service/email.Service';
+import { ConfirmEmailComponent } from './components/confirm-email/confirm-email.component';
 //import {HttpClient} from '@angular/common/http'
 
 
 @NgModule({
-  
+
   declarations: [
     AppComponent,
     MenuComponent,
@@ -27,6 +26,7 @@ import {EmailService} from './components/service/email.Service';
     HabilidadesComponent,
     ExperienciaComponent,
     HobiesComponent,
+    ConfirmEmailComponent,
    // EmailService
   
   ],

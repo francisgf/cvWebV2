@@ -1,0 +1,43 @@
+@media screen and (max-width:1920px) {
+    #main {
+        /* background: url(/assets/background-image.png) no-repeat center center fixed; */
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 120px 10px;
+        margin: 0px;
+        size: auto auto;
+        background: #f1f1f1;
+    }
+    #info {
+        width: 500px;
+        height: 800px;
+        margin: auto;
+        text-align: center;
+    }
+    #confirm {
+        color: #484848;
+        display: block;
+        font-size: 20px;
+    }
+    #gracias {
+        color: #0fa7ff;
+        display: block;
+        font-size: 40px;
+    }
+    #icon-content {
+        display: block;
+    }
+    #ico {
+        color: #0fa7ff;
+        font-size: 90px;
+    }
+    #acept {
+        cursor: pointer;
+    }
+    #acept:hover {
+        cursor: pointer;
+        color: #0fa7ff;
+    }
+}

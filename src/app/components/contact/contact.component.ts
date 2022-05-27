@@ -28,22 +28,21 @@ export class ContactComponent implements OnInit {
 
   isShown:boolean=false;
  
-  constructor(
-    private router: Router,
-  
-
-  ) { }
+  constructor( private router: Router) { }
 
   ngOnInit(): void {
+  
   }
 
-
+  navEmailConfirm(){
+    this.router.navigate(['/sendemail'])
+   }
   sendEmail(): void {
 
-    // START - declarations const
-    const emailDestinate = "francismendozach@hotmail.com";
-    // END - declarations const
+    $("button").attr("hidden","hide");
+    $("#charge").removeAttr("hidden");
 
+    const emailDestinate = "francismendozach@hotmail.com";
     const emailData = new Email(this.emailCustomer, emailDestinate, this.subject, this.contentMessage, this.phonenumber, this.name);
     console.log("salida" + JSON.stringify(emailData));
 
@@ -63,10 +62,13 @@ export class ContactComponent implements OnInit {
         alert("El formato del correo es incorrecto")
        }else if(response.status==500){
         alert("Ocurrió un error de servidor")
+        $("#charge").attr("hidden","hide");
+        $("button").removeAttr("hidden");
         
        }else if(response.ok==true && response.status==200){
         this.cleanFields();
-        this.showModalSend();
+        //this.showModalSend();
+        this.navEmailConfirm();
        }
       
       }
@@ -107,6 +109,9 @@ $("#btn-enviar").on("click", function () {
   alert("hola");
 });
 
+
+
+
 /*
   enviarEmail(): void {
      this.email= new Email(this.emailData, this.contentMessage, this.subject);
@@ -122,3 +127,5 @@ $("#btn-enviar").on("click", function () {
 
 
   }*/
+
+ 
