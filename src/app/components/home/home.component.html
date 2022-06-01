@@ -1,14 +1,14 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <!--begin - home -->
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Cvfrancis</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
+    <base href="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
     <!-- Google Tag Manager -->
@@ -16,17 +16,16 @@
         (function(w, d, s, l, i) {
             w[l] = w[l] || [];
             w[l].push({
-                'gtm.start': new Date().getTime(),
-                event: 'gtm.js'
+                "gtm.start": new Date().getTime(),
+                event: "gtm.js",
             });
             var f = d.getElementsByTagName(s)[0],
                 j = d.createElement(s),
-                dl = l != 'dataLayer' ? '&l=' + l : '';
+                dl = l != "dataLayer" ? "&l=" + l : "";
             j.async = true;
-            j.src =
-                'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
             f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-TMXDBC8');
+        })(window, document, "script", "dataLayer", "GTM-TMXDBC8");
     </script>
     <!-- End Google Tag Manager -->
 </head>
@@ -36,10 +35,25 @@
     'visitorType': 'high-value'
 }];">
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMXDBC8"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-TMXDBC8"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
     <!-- End Google Tag Manager (noscript) -->
+
+    <div id="sobremi-content">
+        <div id="detail-sobremi-content">
+            <div id="btn-close"><i class="bi bi-x-lg" (click)="ocultarModal()"></i></div>
+        </div>
+
+    </div>
     <div class="div-carga">
+        <div id="content-avatar-chargue">
+            <img id="avatar-chargue" alt="" />
+        </div>
         <div class="loading">Cargando ...</div>
         <div class="cuadrado">
             <div class="cube-1"></div>
@@ -47,81 +61,87 @@
             <div class="cube-3"></div>
         </div>
     </div>
-    <!--<div id="div-saludo" hidden="hidden">¡Hola!</div>-->
+
+
 
     <div id="master">
         <div class="habilidades">
             <div class="content-foto-info">
                 <div class="content-foto">
-                    <div class="foto" (mouseenter)="showSaludo()" mouseleave="">
-                        <img id="img" onclick="  dataLayer.push({
-                                        nd1:'Recibir notificaciones',
-                                        nd2:'Aviso',
-                                        nd3:'Visualización',
-                                        nd4:'',
-                                        event:'clicGeneral'
-                                    });">
+                    <div class="foto" (mouseenter)="showSaludo()" mouseleave=" ">
+                        <img id="img" alt="" />
                     </div>
                 </div>
                 <div class="info">
                     <div class="info-head">
-                        <!-- <Span class="saludo"> ¡Hola!</Span>-->
-                        <!-- <Span class="yo-soy"> Mi nombre es</Span>-->
-                        <Span class="nombre" translate="no">FRANCIS MENDOZA</Span>
-                        <Span class="profesion" translate="yes">DESARROLLADOR</Span>
+                        <Span class="nombre" translate="no ">Mi nombres es <strong>FRANCIS</strong></Span>
+                        <Span class="profesion" translate="yes">Soy Desarrollador</Span>
+                        <Span class="conten-btn-sobre" translate="yes " (click)="mostrarModal()"><button id="btn-sobre-mi">Sobre mi</button></Span>
                     </div>
                 </div>
             </div>
             <div class="content-datos-descrip">
-                <hr class="separador-info">
-                <div class="datos">
-                    <Span class="direc"><i class="bi bi-telephone-fill"></i></Span>
-                    <Span class="direc"><i class="bi bi-geo-alt-fill"></i></Span>
-                    <Span class="direc"><i class="bi bi-envelope-fill"></i></Span>
 
-
+                <div class="blok-content">
+                    <div class="datos">
+                        <Span class="direc"><i class="bi bi-geo-alt-fill"></i></Span>
+                    </div>
+                    <div class="descrip">
+                        <Span class="descrip">Jr. Unión 1037 Carhuaz</Span>
+                    </div>
                 </div>
-                <div class="descrip">
-                    <Span class="descrip">943-445789</Span>
-                    <Span class="descrip">Jr. Unión 1037 Carhuaz</Span>
-                    <Span class="descrip">francismendozach@hotmail.com</Span>
 
+                <div class="blok-content">
+                    <div class="datos">
+                        <Span class="direc"><i class="bi bi-phone-fill"></i></Span>
+                    </div>
+                    <div class="descrip">
+                        <Span class="descrip">943-445789</Span>
+                    </div>
+                </div>
 
+                <div class="blok-content">
+                    <div class="datos">
+                        <Span class="direc"><i class="bi bi-envelope-fill"></i></Span>
+                    </div>
+                    <div class="descrip">
+                        <Span class="descrip">francismendozach@hotmail.com</Span>
+                    </div>
                 </div>
             </div>
+            <!--  <div id="email ">
+                <button id="mail ">Enviar</button>
+                <input type="text " placeholder="Ingresa tu E-mail ">
+                 </div>-->
 
-
+            <div class="social">
+                <a href=" "><i class="bi bi-linkedin"></i></a>
+                <a href=" "> <i class="bi bi-facebook"></i></a>
+                <a href=" "><i class="bi bi-instagram"></i></a>
+            </div>
         </div>
         <div class="btn-whatsapp">
-            <a href="https://wa.link/uul15g" target="_blank"><i id="i-whatsapp" class="bi bi-whatsapp"></i></a>
+            <a href="https://wa.link/uul15g " target="_blank "><i id="i-whatsapp" class="bi bi-whatsapp"></i
+        ></a>
         </div>
-
-        <!--   <footer id="footer">
-            <div class="social">
-                <a target="_blank" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQE2R-ttyzAbqAAAAXz97qVAA0QZecVgWcya4DpsctwnINKc56pT1L5I_8dL34jgPYWHbTI49TzAhkVI4w1TIL6cmkDkkpLDAK-Rh8EsY2MirHRBZ4Ba5_5WJsPYQO6wXng8zto=&originalReferer=https://www.google.com/&sessionRedirect=https%3A%2F%2Fpe.linkedin.com%2Fin%2Ffrancis-mendoza-chavez-64a62120a"><i class="bi bi-linkedin"></i></a>
-                <a href=""> <i class="bi bi-facebook"></i></a>
-                <a href=""> <i class="bi bi-whatsapp"></i></a>
-            </div>
-        </footer> -->
     </div>
 </body>
 <!--end - home-->
 <script>
     function carga() {
         dataLayer = [{
-            'pageCategory': 'signup',
-            'visitorType': 'high-value'
-        }];
-        alert("hola");
+            pageCategory: "signup",
+            visitorType: "high-value",
+        }, ];
+        alert("hola ");
     }
 
     function mensaje() {
-        alert("hola");
+        alert("hola ");
     }
-
     window.dataLayer.push({
-        someVariable: 'xxx',
-        someOtherVariable: 'yyy',
+        someVariable: "xxx",
+        someOtherVariable: "yyy",
     });
 </script>
 

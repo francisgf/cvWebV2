@@ -13,6 +13,9 @@ export class HomeComponent implements OnInit {
   constructor() { 
 
 
+    
+    
+
     setTimeout(function() {
      $(".div-carga").fadeIn(1000);
      $(".div-carga").hide();
@@ -39,8 +42,18 @@ $("#img").on({
 
   }
 
+ocultarModal():void{
+  $("#sobremi-content").hide();
+}
+
+mostrarModal():void{
+  $("#sobremi-content").show();
+}
+
+
   ngOnInit(): void {
    //this.GetData();
+   this.ocultarModal();
   }
 
 /*

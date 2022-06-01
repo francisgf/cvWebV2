@@ -7,7 +7,7 @@
         /*top: 707px;*/
         /*background: rgb(12 41 72 / 63%);*/
         /* background-color: #173B7B;*/
-        background-color: #173B7B;
+        /* background-color: #173B7B;*/
         bottom: 0px;
     }
     .social {
@@ -16,6 +16,8 @@
         margin: auto;
         align-items: center;
         justify-content: center;
+        color: #666666;
+        font-weight: 100;
     }
     .social a {
         text-decoration: none;
