@@ -44,7 +44,9 @@
         #datos span {
             padding: 2px;
             display: block;
+            font-size: 12px;
         }
+    
         .spiner {
             color: #ffffff;
         }
@@ -52,7 +54,7 @@
             color: #2796f5
         }
         #datos span i {
-            color: #ffffff;
+            color: #00b8ff;
             margin: 15px;
         }
         #avatar {

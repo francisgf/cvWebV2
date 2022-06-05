@@ -9,24 +9,36 @@ import { left } from '@popperjs/core';
 })
 export class MenuComponent implements OnInit {
 
-  constructor( private router:Router) { }
+  constructor( private router:Router) { 
+   this.ChangeBackTransparentNav();
+  }
 
   ngOnInit(): void {
   }
   navContacto(){
-    this.router.navigate(['/contacto'])       
+    this.router.navigate(['/contacto'])  
+    this.HideMenu();   
+    this.ChangeBackTransparentNav();  
   }
   navHome(){
     this.router.navigate(['/home'])
+    this.HideMenu();
+    this.ChangeBackTransparentNav(); 
   }
   navHabilidades(){
     this.router.navigate(['/habilidades'])
+    this.HideMenu();
+    this.ChangeBackTransparentNav(); 
   }
   navHobies(){
     this.router.navigate(['/hobies'])
+    this.HideMenu();
+    this.ChangeBackTransparentNav(); 
   }
   navExperiencia(){
     this.router.navigate(['/experiencia'])
+    this.HideMenu();
+    this.ChangeBackTransparentNav(); 
   }
 
   showMenu(){
@@ -34,6 +46,7 @@ export class MenuComponent implements OnInit {
    // if(window.innerWidth > 800){
    //$("nav ul").fadeIn(500);
    $("nav ul").toggle("slow");
+   this.ChangeBackSolidNav();
    $("nav").css("background-color", "#0f2c5a");
    /*$(".menu i").replaceWith("<i class=></i>");
    $(".menu i").attr('_ngcontent-xrx-c53');
@@ -41,5 +54,18 @@ export class MenuComponent implements OnInit {
 
    // }
   }
+  HideMenu(){
+    $("nav ul").hide();
+  }
 
+  ChangeBackTransparentNav(){
+    $("nav").removeClass("changeBackSolidColor")
+    $("nav").addClass("changeBackColor")
+  }
+
+  ChangeBackSolidNav(){
+    $("nav").removeClass("changeBackColor")
+    $("nav").addClass("changeBackSolidColor")
+   
+  }
 }

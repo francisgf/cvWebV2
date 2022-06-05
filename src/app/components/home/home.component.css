@@ -299,10 +299,10 @@ body {
         /* transition: all ease-in-out 300ms; */
         z-index: 1;
         /*animation-name: girar-one;*/
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-delay: 10s;
+       /* animation-duration: 7s;*/
+        /*animation-iteration-count: infinite;*/
+        /*animation-direction: alternate;*/
+        /*animation-delay: 10s;*/
     }
     #content-avatar-chargue {
         display: block;
@@ -560,7 +560,7 @@ body {
         padding: 80px 5px 0px 5px;
     }
     .habilidades {
-        background-image: url(/assets/hero-glow.svg);
+       /* background-image: url(/assets/hero-glow.svg);*/
         background-repeat: no-repeat;
         width: 75%;
         height: 630px;
@@ -569,7 +569,7 @@ body {
         margin: auto;
         justify-content: center;
         padding: 10px 0px 20px 0px;
-        background-color: #13274c;
+        background-color: #1a1a1ad9 !important;
         border-radius: 15px;
     }
     .content-foto {
@@ -578,7 +578,7 @@ body {
         height: 300px;
     }
     #img {
-        background: url(/assets/img/fran.jpg);
+        background: url(/assets/MiAvatar.png);
         background-size: 205px 205px;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -586,15 +586,15 @@ body {
         width: 200px !important;
         height: 200px;
         border-radius: 300px;
-        box-shadow: 0px 10px 10px rgba(79, 89, 236, 0.178);
+       /* box-shadow: 0px 10px 10px rgba(79, 89, 236, 0.178);*/
         margin: auto;
         /* transition: all ease-in-out 300ms;*/
         z-index: 1;
-        animation-name: girar;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-delay: 10s;
+        /*animation-name: girar;*/
+      /*  animation-duration: 7s;*/
+        /*animation-iteration-count: infinite;*/
+       /* animation-direction: alternate;*/
+        /*animation-delay: 10s;*/
     }
     @keyframes girar {
         0% {
@@ -832,7 +832,7 @@ body {
         padding: 30px 0px 0px 0px;
     }
     .habilidades {
-        background-image: url(/assets/hero-glow.svg);
+       /* background-image: url(/assets/hero-glow.svg);*/
         background-repeat: no-repeat;
         background-color: #13274c;
         background-size: auto;
@@ -1007,9 +1007,10 @@ body {
     }
     .info {
         width: auto;
-        height: 75px;
-        margin: -10px 20px 20px 20px;
+        height: auto;
+        /* margin: -10px 20px 20px 20px; */
         display: block;
+        background: #f0f8ff00;
     }
     .habilidades {
         width: 93%;
@@ -1027,36 +1028,44 @@ body {
         width: 100% !important;
         height: 200px;
     }
-    #img {
-        background: url(/assets/img/MiAvatar.);
+    #img[_ngcontent-dda-c53] {
+        background: url(/assets/MiAvatar.png);
         background-size: 200px 200px;
         background-repeat: no-repeat;
         background-position-x: center;
         background-position-y: center;
-        width: 180px !important;
-        height: 180px;
+        width: 100% !important;
+        height: 100% !important;
         border-radius: 300px;
         box-shadow: 0px 10px 10px rgba(79, 89, 236, 0.178);
-        margin: auto;
+        /* margin: auto; */
         z-index: 1;
-        animation-name: girar;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-delay: 10s;
     }
-    .foto {
-        width: 100%;
-        height: 100%;
-        margin: auto;
+
+    .blok-content {
         display: flex;
-        padding: 20px;
+        background-color: #2c2c2c;
+        width: 270px;
+        height: 50px;
+        margin: 15px;
+        align-items: center;
+        justify-content: center;
+        box-shadow: -3px 5px 10px rgb(6 6 6 / 18%);
+        border-radius: 3px;
+    }
+    .foto{
+        width: 200px;
+        height: 200px;
+        margin: auto;
+        display: flex !important;
+        padding: 0px;
     }
     .info-head {
         width: 100%;
-        height: 115px;
+        height: 130px;
         text-align: center;
         display: block;
+        margin: 0px !important;
     }
     .saludo {
         display: block;
@@ -1099,8 +1108,9 @@ body {
     }
     .content-datos-descrip {
         margin: auto;
-        padding: 10px;
+        padding: 10px !important;
         justify-content: center;
+        display: block;
     }
     .social a {
         text-decoration: none;
@@ -1185,7 +1195,7 @@ body {
         height: 200px;
     }
     #img {
-        background: url(/assets/img/fran.jpg);
+        /*background: url(/assets/img/fran.jpg);*/
         background-size: 200px 200px;
         background-repeat: no-repeat;
         background-position-x: center;
@@ -1196,11 +1206,11 @@ body {
         box-shadow: 0px 10px 10px rgba(79, 89, 236, 0.178);
         margin: auto;
         z-index: 1;
-        animation-name: girar;
-        animation-duration: 7s;
-        animation-iteration-count: infinite;
-        animation-direction: alternate;
-        animation-delay: 10s;
+        /*animation-name: girar;*/
+      /*  animation-duration: 7s;*/
+        /*animation-iteration-count: infinite;*/
+        /*animation-direction: alternate;*/
+       /* animation-delay: 10s;*/
     }
     .foto {
         width: 100%;

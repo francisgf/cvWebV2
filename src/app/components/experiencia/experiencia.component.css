@@ -6,7 +6,7 @@
             }
             
             body {
-                background: url(/assets/background-image.png) no-repeat center center fixed;
+                background: url(/assets/background.image.png) no-repeat center center fixed;
                 background-size: cover;
                 font-family: 'Archivo', sans-serif;
                 background-repeat: no-repeat;
