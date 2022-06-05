@@ -2,7 +2,7 @@
         /*  font-family: 'Cooda', sans-serif;*/
         font-family: 'Poppins', sans-serif;
         background-color: #1a1a1a;
-        background: url(/assets/background-image.png) no-repeat center center fixed;
+        background: url(/assets/background.image.png) no-repeat center center fixed;
         background-size: cover;
     }
     
@@ -22,7 +22,7 @@
             padding: 120px 10px;
             margin: 0px;
             size: auto auto;
-            background: #1a1a1a;
+            background: #3a1d1d;
         }
         #content-main {
             display: flex;
@@ -32,6 +32,8 @@
             background-color: #161616;
             box-shadow: 2px -1px 19px 8px rgb(0 0 0 / 64%);
             padding: 50px;
+            margin: auto;
+            height: max-content;
         }
         #datos {
             width: auto;
@@ -208,7 +210,7 @@
     
     @media screen and (max-width:1280px) {
         .center {
-            background: url(/assets/background-image.png) no-repeat center center fixed;
+            background: url(/assets/background.image.png) no-repeat center center fixed;
             background-size: cover;
             display: flex;
             align-items: center;

@@ -72,20 +72,55 @@ body {
     #sobremi-content {
         position: fixed;
         background-color: #1a1a1a54;
-        height: 100%;
         width: 100%;
-        justify-content: center;
-        align-items: center;
-        padding-top: 20%;
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* padding-top: 20%; */
         z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: initial;
     }
     #detail-sobremi-content {
-        width: 820px;
+        width: 880px;
         height: 500px;
         background-color: #161616;
         z-index: 12;
         margin: auto;
         box-shadow: -1px 1px 11px 5px rgb(16 16 16 / 73%);
+    }
+    #content-text-avatar {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    #text-content {
+        width: 400px;
+        height: 300px;
+        margin: 10px;
+        padding: 10PX;
+        color: white;
+        font-size: 13px;
+        display: inline-block;
+    }
+    #sobremi-title {
+        color: #00b8ff;
+        padding: 5px 5px 0px 45px;
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
+    }
+    #sobre-mi-avatar {
+        width: 300px;
+        height: 300px;
+        display: inline-block;
+        padding: 20px;
+        margin: 10px;
+    }
+    #sobre-mi-avatar img {
+        width: 100%;
+        height: 100%;
     }
     #btn-close {
         display: flex;
@@ -99,7 +134,7 @@ body {
         cursor: pointer;
     }
     #btn-close i:hover {
-        color: rgb(150, 20, 20);
+        color: #00b8ff;
     }
     .content-foto-info {
         margin: 30px;

@@ -3,7 +3,7 @@
             body {
                 font-family: 'Archivo', sans-serif;
                 background-color: #ffd0bb00;
-                background: url(/assets/background-image.png) no-repeat center center fixed;
+                background: url(/assets/background.image.png) no-repeat center center fixed;
                 background-size: cover;
                 -moz-background-size: cover;
                 -webkit-background-size: cover;

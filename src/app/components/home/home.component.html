@@ -44,9 +44,22 @@
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
-    <div id="sobremi-content">
+    <div id="sobremi-content" (click)="ocultarModal()">
         <div id="detail-sobremi-content">
             <div id="btn-close"><i class="bi bi-x-lg" (click)="ocultarModal()"></i></div>
+            <span id="sobremi-title">Sobre mi</span>
+            <div id="content-text-avatar">
+                <div id="text-content">
+                    <p>
+                        This isn't just cheap WordPress Hosting. With EasyWP, your WordPress website is managed by our very own optimized cloud technology, giving you that "set-and-forget" experience. This unique infrastructure is designed to let each and every website live
+                        and grow quickly, without hiccups.
+
+                    </p>
+                </div>
+                <div id="sobre-mi-avatar">
+                    <img src="/assets/MiAvatar.png" alt="">
+                </div>
+            </div>
         </div>
 
     </div>
@@ -76,7 +89,7 @@
                     <div class="info-head">
                         <Span class="nombre" translate="no ">Mi nombres es <strong>FRANCIS</strong></Span>
                         <Span class="profesion" translate="yes">Soy Desarrollador</Span>
-                        <Span class="conten-btn-sobre" translate="yes " (click)="mostrarModal()"><button id="btn-sobre-mi">Sobre mi</button></Span>
+                        <Span class="conten-btn-sobre" translate="yes "><button id="btn-sobre-mi" (click)="mostrarModal()">Sobre mi</button></Span>
                     </div>
                 </div>
             </div>
