@@ -46,7 +46,7 @@ export class MenuComponent implements OnInit {
    // if(window.innerWidth > 800){
    //$("nav ul").fadeIn(500);
    $("nav ul").toggle("slow");
-   this.ChangeBackSolidNav();
+   //this.ChangeBackSolidNav();
    $("nav").css("background-color", "#0f2c5a");
    /*$(".menu i").replaceWith("<i class=></i>");
    $(".menu i").attr('_ngcontent-xrx-c53');
@@ -55,7 +55,7 @@ export class MenuComponent implements OnInit {
    // }
   }
   HideMenu(){
-    $("nav ul").hide();
+   /* $("nav ul").hide();*/
   }
 
   ChangeBackTransparentNav(){

@@ -992,7 +992,7 @@ body {
         margin: 0px;
         width: 100%;
         height: 100%;
-        padding: 110px 10px 0px 10px;
+        /*padding: 110px 10px 0px 10px;*/
     }
     ul li {
         width: 100%;
@@ -1083,12 +1083,12 @@ body {
     }
     .nombre {
         display: inline-block;
-        font-size: 22px;
+        font-size: 16px;
         color: rgb(255, 255, 255) !important;
     }
     .profesion {
         display: block;
-        font-size: 14px;
+        font-size: 10px;
     }
     .datos span {
         font-size: 11px;
@@ -1131,7 +1131,7 @@ body {
     }
     .div-carga {
         position: fixed;
-        background-color: rgb(23, 64, 114);
+        background-color: rgb(27 27 27);
         height: 100%;
         width: 100%;
         justify-content: center;
@@ -1152,6 +1152,102 @@ body {
         border-radius: 300px;
         background-color: rgb(237 118 61);
     }
+
+    #content-avatar-chargue {
+        display: block;
+        width: 130px;
+        height: 130px;
+        margin: auto;
+        border-radius: 500px;
+        background: #d7d7d7;
+    }
+    .loading{
+        color: #f8f8f8;
+        font-weight: 400;
+        font-size: 14px;
+        display: block;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .cuadrado {
+        display: flex;
+        margin: auto;
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+    .cube-1 {
+        width: 20px;
+        height: 20px;
+        background-color: #bbddff;
+        animation-name: cube-1;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        margin: 10px;
+        border-radius: 100%;
+        animation-delay: 0.5s;
+    }
+    .cube-2 {
+        width: 20px;
+        height: 20px;
+        background-color: #bbddff;
+        animation-name: cube-2;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 1s;
+        margin: 10px;
+        border-radius: 100%;
+    }
+    .cube-3 {
+        width: 20px;
+        height: 20px;
+        background-color: #bbddff;
+        animation-name: cube-3;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+        animation-delay: 1.5s;
+        margin: 10px;
+        border-radius: 100%;
+    }
+    @keyframes cube-1 {
+        0% {
+            transform: scale(0);
+            background-color: #bbddff;
+        }
+        100% {
+            transform: scale(1);
+            background-color: rgb(255, 131, 29);
+        }
+    }
+    @keyframes cube-2 {
+        0% {
+            transform: scale(0);
+            background-color: #ffffff;
+        }
+        100% {
+            transform: scale(1);
+            background-color: rgb(255, 255, 255);
+        }
+    }
+    @keyframes cube-3 {
+        0% {
+            transform: scale(0);
+            background-color: rgb(108, 184, 255);
+        }
+        100% {
+            transform: scale(1);
+            background-color: rgb(255, 131, 29);
+        }
+    }
+
+   .conten-btn-sobre{
+       font-size: 10px;
+   }
 }
 
 @media screen and (max-width: 280px) {
