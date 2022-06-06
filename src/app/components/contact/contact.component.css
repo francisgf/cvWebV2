@@ -14,15 +14,15 @@
     /*@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Bebas+Neue&family=Heebo&display=swap');*/
     
     @media screen and (max-width:1920px) {
-        .center {
+        .center{
             background-size: cover;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 120px 10px;
             margin: 0px;
-            size: auto auto;
-            background: #3a1d1d;
+            size: auto auto !important;
+            background: #00000045;
         }
         #content-main {
             display: flex;
@@ -74,11 +74,11 @@
         }
         #content-avatar {
             width: 400px;
-            height: 600px;
+            height: 500px;
         }
         .div-contact {
             width: 400px;
-            height: px;
+            height: 500px;
             background-color: #3E3E3E;
             padding: 25px 30px 25px 30px;
             justify-content: center;
@@ -243,7 +243,7 @@
         }
     }
     
-    @media screen and (max-width:450px) {
+    @media screen and (max-width: 450px) {
         .center {
             display: flex;
             align-items: center;

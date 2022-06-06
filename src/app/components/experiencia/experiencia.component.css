@@ -42,21 +42,20 @@
                     padding-top: 30%;
                     z-index: 2;
                 }
-                .content-foto-info {
+                .content-foto-info{
                     margin: 30px;
                     display: block;
-                    height: 400px;
+                    height: 300px;
                 }
                 .habilidades {
-                    width: 75%;
+                    width: 430px;
                     height: 16.5%;
-                    background: #FFFFFF;
-                    box-shadow: 0px 10px 10px rgba(56, 56, 56, 0.116);
+                    background: #242424;
+                    box-shadow: 0px 1px 10px 7px rgb(25 25 25 / 99%);
                     border-radius: 10px;
-                    margin: 5% auto -4% auto;
-                    /*padding: 20px;*/
-                    /*display: flex;*/
+                    margin: 5% 5% 1% 5px;
                     justify-content: center;
+                    display: inline-block;
                 }
                 .menu-icon {
                     color: rgb(255, 255, 255);
@@ -77,15 +76,15 @@
                     display: block;
                     font-weight: 100;
                 }
-                .info {
+                .info{
                     width: auto;
-                    height: 400px;
+                    height: 300px;
                     margin: auto auto auto auto;
                     display: block;
-                    padding: 50px;
+                    padding: 30px;
                 }
-                .info span {
-                    color: rgb(77, 77, 77);
+                .info  span {
+                    color: rgb(255 255 255) !important;
                     margin: 0 0 0 0;
                 }
                 .info-head {
@@ -98,9 +97,7 @@
                     color: rgb(25, 143, 221) !important;
                     font-weight: 900;
                 }
-                .separador-info {
-                    color: rgb(255, 255, 255);
-                }
+               
                 #img {
                     background: url(/assets/fran.jpg);
                     background-size: 100% 100%;
@@ -687,10 +684,7 @@
                     width: auto;
                     text-align: left;
                 }
-                .separador-info {
-                    color: rgb(49, 49, 49);
-                    margin: 0px 0px 8px 0px;
-                }
+             
                 #check {
                     font-size: 20px;
                     color: tomato;
