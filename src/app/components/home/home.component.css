@@ -1011,6 +1011,7 @@ body {
         /* margin: -10px 20px 20px 20px; */
         display: block;
         background: #f0f8ff00;
+        animation-name: none !important;
     }
     .habilidades {
         width: 93%;
@@ -1084,6 +1085,18 @@ body {
         display: inline-block;
         font-size: 16px;
         color: rgb(255, 255, 255) !important;
+        animation-name: efect-nombre450;
+        animation-duration: 1s;
+        /*animation-iteration-count: infinite;*/
+        animation-direction: alternate;
+        animation-delay: 2s;
+    }
+    @keyframes efect-nombre450 {
+        0% {
+            font-size: 8px;
+        }
+        50% {}
+        100% {}
     }
     .profesion {
         display: block;

@@ -10,18 +10,13 @@ import { left } from '@popperjs/core';
 export class MenuComponent implements OnInit {
  
   constructor(private router: Router) {
-
-    
     this.ChangeBackTransparentNav();
-    /*this.ValidateResolution();*/
-    this.CaptionMedia();
+    this.captureMedia();
   }
 
   ngOnInit(): void {
     
   }
-
-
 
   navContacto() {
     
@@ -86,7 +81,7 @@ export class MenuComponent implements OnInit {
     this.ChangeBackSolidNav();
     $("nav").css("background-color", "#0f2c5a");
   }
-  
+
   HideMenu() {
     $("nav ul").hide();
   }
@@ -117,7 +112,7 @@ export class MenuComponent implements OnInit {
     }
   }*/
 
-CaptionMedia(){
+  captureMedia(){
 
   $(window).resize(function(){
     var mediaqueryList = window.matchMedia("(min-width: 1280px) and (max-width: 1920px)");
