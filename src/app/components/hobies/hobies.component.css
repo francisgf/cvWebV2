@@ -614,12 +614,12 @@
             display: block;
             padding: 0px;
         }
-        .habilidades {
-            width: 93%;
+        .habilidades{
+            width: 100%;
             height: 100%;
-            box-shadow: 0px 3px 10px 3px rgb(0 0 0 / 80%) !important;
+           /* box-shadow: 0px 3px 10px 3px rgb(0 0 0 / 80%) !important;*/
             border-radius: 10px;
-            margin: 15% auto -40px auto;
+            margin: 10% auto 5% auto !important;
             padding: 10px 0px 10px 0px;
             justify-content: center;
             background: #1a1a1ad1;
@@ -629,10 +629,16 @@
             width: 100% !important;
             height: 200px;
         }
+
+        #content-icon-guitar {
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+        }
         img {
-            width: 200px !important;
-            height: 200px;
-            border-radius: 300px;
+            width: 100% !important;
+            height: 100%;
+            border-radius: 0px;
             box-shadow: 0px 10px 10px rgba(79, 89, 236, 0.178);
             margin: auto;
             z-index: 1;
@@ -673,8 +679,8 @@
             display: block;
             height: 100%;
         }
-        .content-datos-descrip {
-            margin: 0;
+        .content-datos-descrip{
+            margin: 18px 0px 0px 0px;
             padding: 0;
             display: flex;
             justify-content: center;
@@ -703,6 +709,11 @@
             height: 80px;
             text-align: center;
         }
+
+        .info  span{
+            color: rgb(255 255 255) !important;
+            margin: 0 0 0 0 !important;
+        }
         .title-company {
             display: block;
             font-size: 23px;
@@ -717,11 +728,12 @@
             margin: 0px 0px 8px 0px;
         }
         #check {
-            font-size: 20px;
+            font-size: 18px;
             color: tomato;
+            font-style: inherit;
         }
         .desc-content {
-            display: flex;
+            display: inline-grid;
             align-items: center;
             padding: 0px;
             font-size: 13px;
@@ -736,4 +748,8 @@
             width: 40px !important;
             border: none;
         }
+       .desc-detail{
+           color: rgb(255, 255, 255);
+       }
+
     }
