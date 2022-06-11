@@ -1041,7 +1041,7 @@ body {
         width: 100% !important;
         height: 200px;
     }
-    #img[_ngcontent-dda-c53] {
+    #img{
         background: url(/assets/MiAvatar.png);
         background-size: 200px 200px;
         background-repeat: no-repeat;
@@ -1138,7 +1138,7 @@ body {
     }
     .social a {
         text-decoration: none;
-        font-size: 25px;
+        font-size: 20px;
         color: rgb(255, 255, 255);
         padding: 20px !important;
         margin: auto;
@@ -1268,10 +1268,10 @@ body {
             background-color: rgb(255, 131, 29);
         }
     }
-    #detail-sobremi-content {
-        width: 330px;
-        height: 600px;
-        background-color: #161616;
+    #detail-sobremi-content{
+        width: 355px;
+        height: 700px;
+        background-color: #1f1f1f;
         z-index: 12;
         margin: auto;
         box-shadow: -1px 1px 11px 5px rgb(16 16 16 / 73%);
@@ -1295,6 +1295,13 @@ body {
     }
     #btn-sobre-mi:hover {
         background: #44a7ee;
+    }
+    #sobremi-title {
+        color: #00b8ff;
+        padding: 5px 5px 0px 20px;
+        display: block;
+        font-size: 20px;
+        font-weight: 600;
     }
 }
 

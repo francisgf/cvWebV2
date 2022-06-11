@@ -8,7 +8,7 @@
     
     button[disabled=disabled],
     button:disabled {
-        background-color: #cbcbcb;
+        background-color: #505050;
         cursor: not-allowed;
     }
     /*@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Bebas+Neue&family=Heebo&display=swap');*/
@@ -251,12 +251,12 @@
             height: 100%;
             padding: 100px 0px;
         }
-        .div-contact {
-            width: 300px;
-            height: 500px;
-            background-color: #3E3E3E;
+        .div-contact{
+            width: auto;
+            height: auto;
+            background-color: #3e3e3e00;
             border-radius: 10px;
-            padding: 40px;
+            padding: 10px;
             justify-content: center;
             align-items: center;
             box-shadow: 0px 10px 10px rgba(56, 56, 56, 0.116) !important;
@@ -310,11 +310,11 @@
             font-size: 20px !important;
         }
         #content-main {
-            display: flex;
+            display: block;
             width: 350px;
             height: 600px !important;
             justify-content: center;
-            background-color: #161616e0;
+            background-color: #2b2b2b;
             box-shadow: 2px -1px 19px 8px rgb(0 0 0 / 64%);
             padding: 20px;
             margin: auto;
@@ -325,7 +325,9 @@
             display: none;
         }
         #content-avatar {
-            display: none;
+            display: block;
+            height: auto;
+            width: auto;
         }
         form {
             width: 100%;
