@@ -1,13 +1,10 @@
 <head>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body>
 <div ng-show="IsVisible" class="center">
     <form #f=ngForm (ngSubmit)="sendEmail()" novalidate>
-        <div id="content-main">
-
-     
+        <div id="content-main">     
             <div class="div-contact">
                 <!--<h2>Escríbeme un mensaje</h2>-->
                 <div class="form-group">
@@ -25,7 +22,6 @@
                 <div class=" form-group ">
                     <!--<input class="mensaje" name="contentMessage" [(ngModel)]="contentMessage">-->
                     <textarea class="mensaje" cols="20" rows="3" name="contentMessage" maxlength="190" required [(ngModel)]="contentMessage" placeholder="MENSAJE"> </textarea>
-
                 </div>
                 <button id="btn-enviar " [disabled]="!f.valid "> Enviar </button>
                 <div id="charge" hidden="hide">
