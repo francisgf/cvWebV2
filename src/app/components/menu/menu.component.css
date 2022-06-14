@@ -4,7 +4,13 @@ a:visited {
     color: gray;
 }
 
+
+li:active{
+    background: #1489fd;
+}
 @media screen and (max-width:1920px) {
+
+
     ul[style] {
         display: block;
     }
@@ -49,6 +55,7 @@ a:visited {
         color: rgb(23, 132, 204);
         text-decoration: none;
     }
+
     .menu-icon {
         color: rgb(255, 255, 255);
         padding: 10px;
