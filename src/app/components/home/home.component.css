@@ -414,8 +414,8 @@ body {
         justify-content: center;
     }
     .cube-1 {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background-color: #bbddff;
         animation-name: cube-1;
         animation-duration: 0.5s;
@@ -426,8 +426,8 @@ body {
         animation-delay: 0.5s;
     }
     .cube-2 {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background-color: #bbddff;
         animation-name: cube-2;
         animation-duration: 0.5s;
@@ -438,8 +438,8 @@ body {
         border-radius: 100%;
     }
     .cube-3 {
-        width: 30px;
-        height: 30px;
+        width: 20px;
+        height: 20px;
         background-color: #bbddff;
         animation-name: cube-3;
         animation-duration: 0.5s;
@@ -456,17 +456,17 @@ body {
         }
         100% {
             transform: scale(1);
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(255, 131, 29);
         }
     }
     @keyframes cube-2 {
         0% {
             transform: scale(0);
-            background-color: #bbddff;
+            background-color: rgb(255, 131, 29);
         }
         100% {
             transform: scale(1);
-            background-color: rgb(115, 180, 241);
+            background-color: rgb(255, 131, 29);
         }
     }
     @keyframes cube-3 {
@@ -1026,10 +1026,11 @@ body {
     .nombre p {
         color: #ffffff;
         text-shadow: 0px 4px 8px #000000e3;
-    }
-    .hola {
-        color: #009ef7 !important;
         font-size: 20px;
+    }
+    .hola{
+        color: #fb841b !important;
+        font-size: 23px;
         margin: 0px;
     }
     #master {
@@ -1145,8 +1146,13 @@ body {
         100% {}
     }
     .profesion {
-        display: block;
-        font-size: 10px;
+        display: block !important;
+        font-size: 16px !important;
+        margin: 5px !important;
+        letter-spacing: 1px;
+        color: rgb(251 132 27) !important;
+        font-weight: 100;
+        /* letter-spacing: 2px !important; */
     }
     .datos span {
         font-size: 11px;
@@ -1241,22 +1247,22 @@ body {
         height: 20px;
         background-color: #bbddff;
         animation-name: cube-1;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
         margin: 10px;
         border-radius: 100%;
-        animation-delay: 0.5s;
+        animation-delay: 0.3s;
     }
     .cube-2 {
         width: 20px;
         height: 20px;
         background-color: #bbddff;
         animation-name: cube-2;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
-        animation-delay: 1s;
+        animation-delay: 0.5s;
         margin: 10px;
         border-radius: 100%;
     }
@@ -1265,10 +1271,10 @@ body {
         height: 20px;
         background-color: #bbddff;
         animation-name: cube-3;
-        animation-duration: 0.5s;
+        animation-duration: 0.3s;
         animation-iteration-count: infinite;
         animation-direction: alternate;
-        animation-delay: 1.5s;
+        animation-delay: 0.8s;
         margin: 10px;
         border-radius: 100%;
     }
@@ -1289,7 +1295,7 @@ body {
         }
         100% {
             transform: scale(1);
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(255, 131, 29);
         }
     }
     @keyframes cube-3 {
@@ -1324,8 +1330,9 @@ body {
         padding: 5px 10px 5px 10px;
         border-radius: 2px;
         cursor: pointer;
-        width: 80px;
-        height: 27px;
+        width: 90px;
+        height: 32px;
+        font-size: 12px;
     }
     #btn-sobre-mi:hover {
         background: #44a7ee;
@@ -1337,7 +1344,19 @@ body {
         font-size: 20px;
         font-weight: 600;
     }
-}
+
+    #sobremi-content {
+        position: fixed;
+        background-color: #1a1a1a54;
+        width: 100%;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        padding: 0px !important;
+    }
+} 
 
 @media screen and (max-width: 280px) {
     #master {

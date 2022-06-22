@@ -1,6 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { hide } from '@popperjs/core';
+import { Postulant } from 'src/app/model/postulant';
+import {PostulantService} from 'src/app/services/postulantServices';
+import { Observable } from "rxjs";
 import * as $ from 'jquery';
+//import { stringify } from 'querystring';
 
 
 @Component({
@@ -9,20 +13,17 @@ import * as $ from 'jquery';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+ postulantObj = new Observable<Postulant[]>();
+ // postulantt: Observable<Postulant[]>;
+ postulantRersponse = new Postulant();
+ 
 
-  constructor() { 
-
-
-    
-    
-
+  constructor(private postulantServices: PostulantService) { 
+    //this.reloadData();
     setTimeout(function() {
      $(".div-carga").fadeIn(1000);
-     $(".div-carga").hide();
-     
-  }, 2000);
-
-  
+     $(".div-carga").hide();   
+     }, 2000);
 
 $("#img").on({
   mouseenter: function () {
@@ -42,6 +43,13 @@ $("#img").on({
 
   }
 
+reloadData(){
+ /*this.postulantObj=  this.postulantServices.getpostulantsList();*/
+
+ this.getList();
+console.log("se hizo click")
+}
+
 ocultarModal():void{
   $("#sobremi-content").hide();
 }
@@ -51,9 +59,10 @@ mostrarModal():void{
 }
 
 
-  ngOnInit(): void {
+  ngOnInit():void{
    //this.GetData();
    this.ocultarModal();
+   this.reloadData();
   }
 
 /*
@@ -94,8 +103,37 @@ GetData(): void {
       alert("NO se pudo obtener los datos ");
     });
 
+ }
+
+
+getList():void{
+  fetch('http://localhost:9090/postulant/byId/62ad748e0deff61ee03391e8', {
+    method: 'get',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  })
+    .then(response => response.json())
+    .then(data => {
+
+      this.postulantRersponse= data;
+          $(".nombre").text("Mi nombres es"+" "+this.postulantRersponse.name);
+          $(".profesion").text("Soyttt"+" "+this.postulantRersponse.profession);
+    //  $(".nombre").text(data.name +" "+ data.firtsName);
+     // console.table('Success:', data);
+      console.log('aqui la data:', this.postulantRersponse.name);
+
+      
+    })
+    .catch((error) => {
+      console.log("Error al enviar");
+      alert("NO se pudo obtener los datos ");
+    });
+
 
  }
+
+
 
  showSaludo(){
   $("#div-saludo").fadeIn(1000);

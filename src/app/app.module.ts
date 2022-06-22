@@ -11,8 +11,9 @@ import { ExperienciaComponent } from './components/experiencia/experiencia.compo
 import { HobiesComponent } from './components/hobies/hobies.component';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {EmailService} from './components/service/email.Service';
+import { PostulantService } from './services/postulantServices';
 import { ConfirmEmailComponent } from './components/confirm-email/confirm-email.component';
-//import {HttpClient} from '@angular/common/http'
+import {HttpClientModule} from '@angular/common/http'
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import { ConfirmEmailComponent } from './components/confirm-email/confirm-email.
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    //HttpClient
+   HttpClientModule
     //EmailService
   
   ],
@@ -44,7 +45,8 @@ import { ConfirmEmailComponent } from './components/confirm-email/confirm-email.
   exports:[FormsModule],
 
   providers: [
-  EmailService
+  EmailService,
+  PostulantService
   ],
   bootstrap: [AppComponent]
 })

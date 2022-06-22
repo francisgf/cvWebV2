@@ -60,7 +60,7 @@
                     </p>
                 </div>
                 <div id="sobre-mi-avatar">
-                    <img src="/assets/MiAvatar.png" alt="">
+                    <img src="/assets/MiAvatar.png" alt="" >
                 </div>
             </div>
         </div>
@@ -90,7 +90,7 @@
                 </div>
                 <div class="info">
                     <div class="info-head">
-                        <Span class="hola" translate="no "><p> ¡Hola! </p></Span>
+                        <Span class="hola" translate="no " (click)="reloadData()"><p> ¡Hello! </p></Span>
                         <Span class="nombre" translate="no "><p> Mi nombres es FRANCIS </p></Span>
                         <Span class="profesion" translate="yes">Soy Desarrollador</Span>
                         <Span class="conten-btn-sobre" translate="yes "><button id="btn-sobre-mi" (click)="mostrarModal()">Sobre mi</button></Span>
@@ -105,6 +105,7 @@
                     </div>
                     <div class="descrip">
                         <Span class="descrip">Jr. Unión 1037 Carhuaz</Span>
+                        <td>{{postulantRersponse.name}}</td> 
                     </div>
                 </div>
 
