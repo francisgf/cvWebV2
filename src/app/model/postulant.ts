@@ -8,5 +8,6 @@ export class Postulant{
         phone: number=0;
         profession: String ="";
         education: String="";
+        location: String="";
 
 }

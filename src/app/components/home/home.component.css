@@ -1356,6 +1356,20 @@ body {
         height: 100%;
         padding: 0px !important;
     }
+
+   #error-server {
+        text-align: center;
+        font-size: 12px;
+    }
+
+    #sad-icon{
+        color: #f7f700 !important ;
+        padding: 3px;
+    }
+
+    #msn-error-server{
+        color: #ff0909;
+    }
 } 
 
 @media screen and (max-width: 280px) {

@@ -45,9 +45,7 @@ $("#img").on({
 
 reloadData(){
  /*this.postulantObj=  this.postulantServices.getpostulantsList();*/
-
  this.getList();
-console.log("se hizo click")
 }
 
 ocultarModal():void{
@@ -118,16 +116,28 @@ getList():void{
 
       this.postulantRersponse= data;
           $(".nombre").text("Mi nombres es"+" "+this.postulantRersponse.name);
-          $(".profesion").text("Soyttt"+" "+this.postulantRersponse.profession);
+          $(".profesion").text("Soy"+" "+this.postulantRersponse.profession);    
+          $("#phone").text(this.postulantRersponse.phone);
+          $("#email").text(this.postulantRersponse.email);
+          $("#location").text(""+this.postulantRersponse.location);
+        
+
     //  $(".nombre").text(data.name +" "+ data.firtsName);
      // console.table('Success:', data);
-      console.log('aqui la data:', this.postulantRersponse.name);
-
-      
+      console.log('aqui la data:', this.postulantRersponse.name);  
     })
     .catch((error) => {
-      console.log("Error al enviar");
-      alert("NO se pudo obtener los datos ");
+     // $("#error-server").text("Error al cargar los datos");
+    $("#error-server").append(`<span class="sad-icon"><i  class="bi bi-emoji-frown-fill"></i></span>
+                            <span class="msn-error-server">Error al cargar los datos</span>`);
+        
+    $(".nombre").text("No se pudo cargar");
+      $(".profesion").text("No se pudo cargar");    
+      $("#phone").text("No se pudo cargar");
+      $("#email").text("No se pudo cargar");
+      $("#location").text("No se pudo cargar");
+      $("#btn-sobre-mi").hide()
+       console.error("SERVER RESPONSE ERROR ");
     });
 
 

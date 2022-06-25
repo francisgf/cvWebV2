@@ -90,9 +90,9 @@
                 </div>
                 <div class="info">
                     <div class="info-head">
-                        <Span class="hola" translate="no " (click)="reloadData()"><p> ¡Hello! </p></Span>
-                        <Span class="nombre" translate="no "><p> Mi nombres es FRANCIS </p></Span>
-                        <Span class="profesion" translate="yes">Soy Desarrollador</Span>
+                        <Span class="hola" translate="yes" ><p> ¡Hello! </p></Span>
+                        <Span class="nombre" translate="no "><p> Cargando...</p></Span>
+                        <Span class="profesion" translate="yes">Cargando... </Span>
                         <Span class="conten-btn-sobre" translate="yes "><button id="btn-sobre-mi" (click)="mostrarModal()">Sobre mi</button></Span>
                     </div>
                 </div>
@@ -104,8 +104,7 @@
                         <Span class="direc"><i class="bi bi-geo-alt-fill"></i></Span>
                     </div>
                     <div class="descrip">
-                        <Span class="descrip">Jr. Unión 1037 Carhuaz</Span>
-                        <td>{{postulantRersponse.name}}</td> 
+                        <Span id="location" class="descrip">Cargando...</Span>
                     </div>
                 </div>
 
@@ -113,8 +112,8 @@
                     <div class="datos">
                         <Span class="direc"><i class="bi bi-phone-fill"></i></Span>
                     </div>
-                    <div class="descrip">
-                        <Span class="descrip">943-445789</Span>
+                    <div  class="descrip">
+                        <Span id ="phone" class="descrip">Cargando...</Span>
                     </div>
                 </div>
 
@@ -123,9 +122,11 @@
                         <Span class="direc"><i class="bi bi-envelope-fill"></i></Span>
                     </div>
                     <div class="descrip">
-                        <Span class="descrip">francismendozach@hotmail.com</Span>
+                        <Span id="email" class="descrip">e-mail</Span>
                     </div>
                 </div>
+
+                <div id="error-server"></div>
             </div>
             <!--  <div id="email ">
                 <button id="mail ">Enviar</button>
