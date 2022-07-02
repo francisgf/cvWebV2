@@ -24,6 +24,7 @@
                     width: 100%;
                     height: 100%;
                     margin: 80px 10%;
+                    text-align: center;
                 }
                 .loading {
                     color: #042f5a;
@@ -80,7 +81,7 @@
                     width: auto;
                     height: 300px;
                     margin: auto auto auto auto;
-                    display: block;
+                    display: table-row;
                     padding: 30px;
                 }
                 .info span {
@@ -133,7 +134,7 @@
                 }
                 .description-job {
                     display: block;
-                    font-size: 25px;
+                    font-size: 18px;
                     color: rgb(90 90 90) !important;
                     font-weight: 700;
                     letter-spacing: 1px;
@@ -284,6 +285,7 @@
                     display: flex;
                     align-items: center;
                     padding: 0px;
+                    font-size: 12px;
                 }
                 .desc-content span {
                     display: inline-block;
