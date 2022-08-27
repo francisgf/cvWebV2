@@ -27,6 +27,12 @@ body {
     width: 100%;
 }
 
+.body-error{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
 .vid::selection {
     background-color: #bbddff;
     color: #051729;
@@ -38,7 +44,13 @@ body {
 @media screen and (max-width: 1920px) {
 
 
-
+    #error-server {
+        color: #ff0909;
+        display: block;
+        text-align: center;
+        font-size: 12px;
+        font-weight: 100;
+    }
     #btn-sobre-mi {
         border: none;
         margin-top: 15px;
@@ -88,7 +100,7 @@ body {
     }
     #detail-sobremi-content {
         width: 880px;
-        height: 500px;
+        height: 750px;
         background-color: #161616;
         z-index: 12;
         margin: auto;
@@ -218,7 +230,7 @@ body {
         padding: 20px;
         display: flex;
         align-items: center;
-        background: #191919;
+       /* background: #191919;*/
         border-radius: 0px 100px 100px 10px;
         animation-name: efect;
         animation-duration: 1s;
@@ -561,9 +573,12 @@ body {
         display: flex;
         justify-content: center;
     }
+ 
 }
 
 @media screen and (max-width: 1280px) {
+
+
     #master {
         margin: 0px;
         width: 100%;
@@ -607,6 +622,15 @@ body {
         /*animation-iteration-count: infinite;*/
         /* animation-direction: alternate;*/
         /*animation-delay: 10s;*/
+    }
+
+    #detail-sobremi-content{
+        width: 650px;
+        height: 600px;
+        background-color: #1f1f1f;
+        z-index: 12;
+        margin: auto;
+        box-shadow: -1px 1px 11px 5px rgb(16 16 16 / 73%);
     }
     @keyframes girar {
         0% {
@@ -1308,8 +1332,8 @@ body {
         }
     }
     #detail-sobremi-content{
-        width: 355px;
-        height: 700px;
+        width: 300px;
+        height: 500px;
         background-color: #1f1f1f;
         z-index: 12;
         margin: auto;
@@ -1367,7 +1391,7 @@ body {
     }
 
     #msn-error-server{
-        color: #ff0909;
+        color: #ff0909; 
     }
 } 
 
